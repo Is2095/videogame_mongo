@@ -9,8 +9,7 @@ import store from './Redux/store';
 import axios from 'axios';
 
 //axios.defaults.baseURL = process.env.REACT_APP_LOCAL
-axios.defaults.baseURL = 'https://videogames-mongo-back.vercel.app' 
-
+axios.defaults.baseURL = process.env.REACT_APP_URL_BACKEND
 
 const root = createRoot(document.getElementById("root"));
 root.render(
